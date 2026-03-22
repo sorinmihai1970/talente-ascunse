@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Élégance — Cofetărie Artizanală</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-de">✦</span>
+        <span class="logo-name">Dulce Élégance</span>
+        <span class="logo-de">✦</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#despre">Despre Noi</a></li>
+        <li><a href="#meniu">Meniu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#rezerva">Rezervare</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#rezerva" class="btn-nav">Rezervă o Masă</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://picsum.photos/seed/pastry77/1920/1080" alt="Cofetărie elegantă" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-up">— Cofetărie Artizanală —</p>
+      <h1 class="hero-title animate-up">
+        Dulce<br /><em>Élégance</em>
+      </h1>
+      <p class="hero-subtitle animate-up">
+        Fiecare prăjitură spune o poveste.<br />Lăsați-ne să o scriem pentru voi.
+      </p>
+      <div class="hero-cta animate-up">
+        <a href="#meniu" class="btn-primary">Descoperă Meniul</a>
+        <a href="#despre" class="btn-ghost">Povestea Noastră</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== BANDĂ ANUNȚ ===== -->
+  <div class="announce-bar">
+    <div class="announce-track">
+      <span>✦ Torturi la comandă &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Prăjituri artizanale &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Macarons franțuzești &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Evenimente speciale &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Torturi la comandă &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Prăjituri artizanale &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Macarons franțuzești &nbsp;&nbsp;&nbsp;</span>
+      <span>✦ Evenimente speciale &nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== DESPRE NOI ===== -->
+  <section class="despre" id="despre">
+    <div class="container">
+      <div class="despre-grid">
+        <div class="despre-images">
+          <div class="despre-img-main">
+            <img src="https://picsum.photos/seed/cake11/600/750" alt="Cofetăria noastră" />
+          </div>
+          <div class="despre-img-secondary">
+            <img src="https://picsum.photos/seed/dessert22/400/400" alt="Detalii artizanale" />
+            <div class="despre-badge">
+              <span class="badge-number">15+</span>
+              <span class="badge-text">Ani de<br />experiență</span>
+            </div>
+          </div>
+        </div>
+        <div class="despre-text">
+          <p class="section-eyebrow">Povestea Noastră</p>
+          <h2 class="section-title">Artă în fiecare<br /><em>detaliu dulce</em></h2>
+          <div class="divider-gold"></div>
+          <p class="despre-desc">
+            Din 2009, cofetăria noastră îmbină tradiția patiseriei clasice franceze cu rafinamentul gusturilor contemporane. Fiecare produs este creat manual, cu ingrediente selectate cu grijă, pentru a oferi o experiență de neuitat.
+          </p>
+          <p class="despre-desc">
+            Echipa noastră de cofetari pasionați pune suflet în fiecare tort, în fiecare ecler, în fiecare macaron — pentru că credem că dulciurile sunt mai mult decât gusturi, sunt amintiri.
+          </p>
+          <div class="despre-stats">
+            <div class="stat">
+              <span class="stat-nr">2,400+</span>
+              <span class="stat-label">Clienți fericiți</span>
+            </div>
+            <div class="stat">
+              <span class="stat-nr">120+</span>
+              <span class="stat-label">Rețete unice</span>
+            </div>
+            <div class="stat">
+              <span class="stat-nr">100%</span>
+              <span class="stat-label">Natural & artizanal</span>
+            </div>
+          </div>
+          <a href="#meniu" class="btn-primary">Explorează Meniul</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENIU ===== -->
+  <section class="meniu" id="meniu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Creațiile Noastre</p>
+        <h2 class="section-title">Meniul <em>Nostru</em></h2>
+        <div class="divider-gold center"></div>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="torturi">Torturi</button>
+        <button class="tab-btn" data-tab="prajituri">Prăjituri</button>
+        <button class="tab-btn" data-tab="macarons">Macarons</button>
+        <button class="tab-btn" data-tab="bauturi">Băuturi</button>
+      </div>
+
+      <!-- Torturi -->
+      <div class="menu-panel active" id="tab-torturi">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/tort1/400/300" alt="Tort Fraisier" />
+              <div class="menu-tag">Bestseller</div>
+            </div>
+            <div class="menu-info">
+              <h3>Tort Fraisier</h3>
+              <p>Cremă diplomată, căpșuni proaspete, pandișpan cu vanilie</p>
+              <div class="menu-footer">
+                <span class="price">de la 180 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/tort2/400/300" alt="Tort Opera" />
+              <div class="menu-tag">Clasic</div>
+            </div>
+            <div class="menu-info">
+              <h3>Tort Opéra</h3>
+              <p>Blat Joconde, cremă ganache, mousse cafea, glazură oglindă</p>
+              <div class="menu-footer">
+                <span class="price">de la 200 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/tort3/400/300" alt="Tort Entremet" />
+            </div>
+            <div class="menu-info">
+              <h3>Entremet Zmeură</h3>
+              <p>Mousse zmeură, insert coulis, glazură oglindă roz</p>
+              <div class="menu-footer">
+                <span class="price">de la 220 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/tort4/400/300" alt="Tort Ciocolată" />
+              <div class="menu-tag">Nou</div>
+            </div>
+            <div class="menu-info">
+              <h3>Noir Intensité</h3>
+              <p>Mousse ciocolată 70%, pralinéfe alune, crunch feuilletine</p>
+              <div class="menu-footer">
+                <span class="price">de la 210 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prăjituri -->
+      <div class="menu-panel" id="tab-prajituri">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/praj1/400/300" alt="Ecler Vanilie" />
+              <div class="menu-tag">Clasic</div>
+            </div>
+            <div class="menu-info">
+              <h3>Ecler Vanilie Bourbon</h3>
+              <p>Pâte à choux, cremă patisieră vanilie, glazură fondant</p>
+              <div class="menu-footer">
+                <span class="price">18 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/praj2/400/300" alt="Millefeuille" />
+              <div class="menu-tag">Bestseller</div>
+            </div>
+            <div class="menu-info">
+              <h3>Mille-Feuille</h3>
+              <p>Foietaj caramelizat, cremă diplomat, căpșuni de sezon</p>
+              <div class="menu-footer">
+                <span class="price">22 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/praj3/400/300" alt="Tarte Citron" />
+            </div>
+            <div class="menu-info">
+              <h3>Tarte au Citron</h3>
+              <p>Cremă lemon curd, meringue italiană flambată, sablé breton</p>
+              <div class="menu-footer">
+                <span class="price">20 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/praj4/400/300" alt="Paris Brest" />
+              <div class="menu-tag">Nou</div>
+            </div>
+            <div class="menu-info">
+              <h3>Paris-Brest</h3>
+              <p>Pâte à choux, cremă pralinéfe, alune caramelizate</p>
+              <div class="menu-footer">
+                <span class="price">25 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Macarons -->
+      <div class="menu-panel" id="tab-macarons">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/mac1/400/300" alt="Macaron Roz" />
+            </div>
+            <div class="menu-info">
+              <h3>Macaron Framboise</h3>
+              <p>Coji fine cu migdale, ganache zmeură proaspătă</p>
+              <div class="menu-footer">
+                <span class="price">8 lei / buc</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/mac2/400/300" alt="Macaron Vanilie" />
+              <div class="menu-tag">Bestseller</div>
+            </div>
+            <div class="menu-info">
+              <h3>Macaron Vanille</h3>
+              <p>Coji cu vanilie Bourbon, crème brûlée moale</p>
+              <div class="menu-footer">
+                <span class="price">8 lei / buc</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/mac3/400/300" alt="Macaron Salted Caramel" />
+              <div class="menu-tag">Favorit</div>
+            </div>
+            <div class="menu-info">
+              <h3>Salted Caramel</h3>
+              <p>Coji caramel, ganache caramel sarat cu fleur de sel</p>
+              <div class="menu-footer">
+                <span class="price">8 lei / buc</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/mac4/400/300" alt="Macaron Pistachio" />
+            </div>
+            <div class="menu-info">
+              <h3>Macaron Pistache</h3>
+              <p>Coji cu fistic sicilian, cremă ganache pistacio</p>
+              <div class="menu-footer">
+                <span class="price">9 lei / buc</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Băuturi -->
+      <div class="menu-panel" id="tab-bauturi">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/bau1/400/300" alt="Cafea" />
+            </div>
+            <div class="menu-info">
+              <h3>Cappuccino Artizanal</h3>
+              <p>Espresso de specialitate, lapte spumat, art latte</p>
+              <div class="menu-footer">
+                <span class="price">18 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/bau2/400/300" alt="Ceai" />
+              <div class="menu-tag">Cald</div>
+            </div>
+            <div class="menu-info">
+              <h3>Ceai Earl Grey Royal</h3>
+              <p>Ceai bergamot premium, lapte de ovăz, miere de tei</p>
+              <div class="menu-footer">
+                <span class="price">14 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/bau3/400/300" alt="Hot Chocolate" />
+              <div class="menu-tag">Favorit</div>
+            </div>
+            <div class="menu-info">
+              <h3>Chocolat Chaud</h3>
+              <p>Ciocolată Valrhona 66%, frișcă bătută, praful de cacao</p>
+              <div class="menu-footer">
+                <span class="price">20 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img src="https://picsum.photos/seed/bau4/400/300" alt="Limonada" />
+            </div>
+            <div class="menu-info">
+              <h3>Limonadă Rose</h3>
+              <p>Lămâie proaspătă, sirop trandafiri, apă minerală, mentă</p>
+              <div class="menu-footer">
+                <span class="price">15 lei</span>
+                <a href="#rezerva" class="btn-sm">Comandă</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="galerie" id="galerie">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Imagini din Cofetărie</p>
+        <h2 class="section-title">Galeria <em>Noastră</em></h2>
+        <div class="divider-gold center"></div>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://picsum.photos/seed/gal1/600/800" alt="Tort artizanal" />
+        <div class="gallery-overlay">
+          <span>Torturi Artizanale</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/seed/gal2/600/400" alt="Macarons" />
+        <div class="gallery-overlay">
+          <span>Macarons</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/seed/gal3/600/400" alt="Prăjituri" />
+        <div class="gallery-overlay">
+          <span>Prăjituri</span>
+        </div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://picsum.photos/seed/gal4/900/400" alt="Sala cofetărie" />
+        <div class="gallery-overlay">
+          <span>Sala Noastră</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/seed/gal5/600/400" alt="Detalii" />
+        <div class="gallery-overlay">
+          <span>Detalii</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REZERVARE ===== -->
+  <section class="rezerva" id="rezerva">
+    <div class="rezerva-bg">
+      <img src="https://picsum.photos/seed/rezerv1/1600/900" alt="Ambient cofetărie" />
+      <div class="rezerva-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="rezerva-grid">
+        <div class="rezerva-text">
+          <p class="section-eyebrow light">Vă Așteptăm</p>
+          <h2 class="section-title light">Rezervați<br /><em>O Masă</em></h2>
+          <div class="divider-gold"></div>
+          <p class="rezerva-desc">
+            Bucurați-vă de un moment de răsfăț într-un cadru elegant. Rezervați o masă și vom pregăti pentru voi o experiență memorabilă.
+          </p>
+          <div class="rezerva-info">
+            <div class="info-item">
+              <span class="info-icon">◷</span>
+              <div>
+                <strong>Program</strong>
+                <span>Luni – Vineri: 08:00 – 21:00<br />Sâmbătă – Duminică: 09:00 – 22:00</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">✆</span>
+              <div>
+                <strong>Telefon</strong>
+                <span>+40 721 000 000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rezerva-form-wrap">
+          <form class="rezerva-form" id="rezervaForm">
+            <h3>Completați formularul</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nume complet</label>
+                <input type="text" placeholder="ex: Maria Ionescu" required />
+              </div>
+              <div class="form-group">
+                <label>Telefon</label>
+                <input type="tel" placeholder="+40 7xx xxx xxx" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Data</label>
+                <input type="date" required />
+              </div>
+              <div class="form-group">
+                <label>Ora</label>
+                <input type="time" min="08:00" max="21:30" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Număr persoane</label>
+                <select>
+                  <option>1 persoană</option>
+                  <option>2 persoane</option>
+                  <option selected>3–4 persoane</option>
+                  <option>5–6 persoane</option>
+                  <option>7+ persoane</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Ocazie specială</label>
+                <select>
+                  <option value="">Fără ocazie</option>
+                  <option>Aniversare</option>
+                  <option>Zi de naștere</option>
+                  <option>Întâlnire romantică</option>
+                  <option>Altele</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Mențiuni speciale</label>
+              <textarea placeholder="Alergii, preferințe, mesaj special..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full">Rezervă Acum</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Rezervare Confirmată!</h3>
+            <p>Vă mulțumim! Vă vom contacta în curând pentru confirmare.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALE ===== -->
+  <section class="testimoniale">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Ce Spun Clienții</p>
+        <h2 class="section-title">Recenzii <em>& Impresii</em></h2>
+        <div class="divider-gold center"></div>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Cele mai bune macarons din oraș, fără nicio îndoială. Ambianta elegantă și personalul atent fac experiența completă."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/seed/p1/80/80" alt="Client" />
+              <div>
+                <strong>Elena Popescu</strong>
+                <span>Client fidel</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Am comandat tortul de aniversare și a depășit toate așteptările. Frumos, delicios și livrat perfect."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/seed/p2/80/80" alt="Client" />
+              <div>
+                <strong>Andrei Mihalache</strong>
+                <span>Client</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Eclere divine, cappuccino aromat și o atmosferă ca-n Paris. Locul meu preferat pentru o pauză de răsfăț."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/seed/p3/80/80" alt="Client" />
+              <div>
+                <strong>Ioana Stănescu</strong>
+                <span>Client fidel</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Calitate excepțională la fiecare vizită. Ingredientele naturale se simt imediat. Recomand cu căldură!"</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/seed/p4/80/80" alt="Client" />
+              <div>
+                <strong>Cristian Dumitrescu</strong>
+                <span>Client</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev">&#8592;</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="carouselNext">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Veniți la Noi</p>
+        <h2 class="section-title">Contact <em>& Locație</em></h2>
+        <div class="divider-gold center"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <span class="contact-icon">✦</span>
+            <h4>Adresă</h4>
+            <p>Str. Florilor nr. 12<br />București, Sector 1</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">✆</span>
+            <h4>Telefon & Email</h4>
+            <p>+40 721 000 000<br />contact@dulceelegance.ro</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">◷</span>
+            <h4>Program</h4>
+            <p>Lun–Vin: 08:00 – 21:00<br />Sâm–Dum: 09:00 – 22:00</p>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="TikTok">tk</a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="map-placeholder">
+            <div class="map-pin">✦</div>
+            <p>Dulce Élégance</p>
+            <span>Str. Florilor nr. 12, București</span>
+            <a href="#" class="btn-sm mt-1">Deschide în Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">✦ Dulce Élégance ✦</div>
+          <p>Cofetărie artizanală cu tradiție, unde fiecare dulce este o operă de artă.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Navigare</h5>
+          <ul>
+            <li><a href="#despre">Despre Noi</a></li>
+            <li><a href="#meniu">Meniu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#rezerva">Rezervare</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Produse</h5>
+          <ul>
+            <li><a href="#meniu">Torturi la Comandă</a></li>
+            <li><a href="#meniu">Prăjituri</a></li>
+            <li><a href="#meniu">Macarons</a></li>
+            <li><a href="#meniu">Băuturi</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Newsletter</h5>
+          <p>Abonați-vă pentru noutăți și oferte speciale.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email-ul dvs." />
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Dulce Élégance. Toate drepturile rezervate.</p>
+        <div class="footer-legal">
+          <a href="#">Politica de Confidențialitate</a>
+          <a href="#">Termeni & Condiții</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Sus">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
