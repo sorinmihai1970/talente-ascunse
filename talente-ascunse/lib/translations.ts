@@ -31,8 +31,8 @@ export const t = {
   gallery: {
     title: { ro: "Galerie", en: "Gallery" },
     subtitle: {
-      ro: "Lucrări originale ale tinerilor artiști din medii rurale",
-      en: "Original artworks by young artists from rural areas",
+      ro: "Lucrări originale ale tinerilor artiști care merită să fie văzuți",
+      en: "Original artworks by young artists who deserve to be seen",
     },
     filters: {
       all: { ro: "Toate", en: "All" },
