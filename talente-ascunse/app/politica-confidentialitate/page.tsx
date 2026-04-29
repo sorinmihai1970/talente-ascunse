@@ -12,7 +12,7 @@ export default function PrivacyPage() {
           {lang === "ro" ? "Politică de Confidențialitate" : "Privacy Policy"}
         </h1>
         <p className="text-gray-500 text-sm mb-10">
-          {lang === "ro" ? "Ultima actualizare: 2025" : "Last updated: 2025"}
+          {lang === "ro" ? "Ultima actualizare: 2026" : "Last updated: 2026"}
         </p>
 
         <div className="prose prose-gray max-w-none">
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">1. Operatorul de date</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Asociația EXCEDO, cu sediul în România, este operatorul de date cu caracter personal în sensul GDPR (Regulamentul UE 2016/679).
-                Contact: <a href="mailto:contact@excedo.ro" className="text-[#1a9410] hover:underline">contact@excedo.ro</a>
+                Contact: <a href="mailto:excedo2022@gmail.com" className="text-[#1a9410] hover:underline">excedo2022@gmail.com</a>
               </p>
 
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">2. Date colectate</h2>
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
                 <li>Opoziție la prelucrare</li>
               </ul>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Pentru orice solicitare, contactează-ne la: <a href="mailto:contact@excedo.ro" className="text-[#1a9410] hover:underline">contact@excedo.ro</a>
+                Pentru orice solicitare, contactează-ne la: <a href="mailto:excedo2022@gmail.com" className="text-[#1a9410] hover:underline">excedo2022@gmail.com</a>
               </p>
 
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">6. Politica privind cookies</h2>
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">1. Data controller</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 EXCEDO Association, based in Romania, is the data controller within the meaning of GDPR (EU Regulation 2016/679).
-                Contact: <a href="mailto:contact@excedo.ro" className="text-[#1a9410] hover:underline">contact@excedo.ro</a>
+                Contact: <a href="mailto:excedo2022@gmail.com" className="text-[#1a9410] hover:underline">excedo2022@gmail.com</a>
               </p>
 
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">2. Data collected</h2>
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
                 <li>Object to processing</li>
               </ul>
               <p className="text-gray-600 leading-relaxed mb-4">
-                For any request, contact us at: <a href="mailto:contact@excedo.ro" className="text-[#1a9410] hover:underline">contact@excedo.ro</a>
+                For any request, contact us at: <a href="mailto:excedo2022@gmail.com" className="text-[#1a9410] hover:underline">excedo2022@gmail.com</a>
               </p>
 
               <h2 className="text-xl font-bold text-gray-800 mt-8 mb-3">6. Cookie policy</h2>

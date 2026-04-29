@@ -119,8 +119,8 @@ export default function DesprePage() {
             </div>
             <div className="text-left">
               <p className="font-bold text-gray-900">Asociația EXCEDO</p>
-              <a href="mailto:contact@excedo.ro" className="text-[#1a9410] text-sm hover:underline">
-                contact@excedo.ro
+              <a href="mailto:excedo2022@gmail.com" className="text-[#1a9410] text-sm hover:underline">
+                excedo2022@gmail.com
               </a>
             </div>
           </div>

@@ -67,8 +67,8 @@ function HeroSection() {
 
           <p className="text-sm text-gray-400 mt-2">
             {tr(t.hero.contact, lang)}{" "}
-            <a href="mailto:contact@excedo.ro" className="text-[#4ade80] hover:underline">
-              contact@excedo.ro
+            <a href="mailto:excedo2022@gmail.com" className="text-[#4ade80] hover:underline">
+              excedo2022@gmail.com
             </a>
           </p>
         </div>

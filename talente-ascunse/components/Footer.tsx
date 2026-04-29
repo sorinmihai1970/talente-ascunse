@@ -40,21 +40,21 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <h3 className="text-white font-semibold text-sm mb-1">Contact</h3>
             <a
-              href="tel:+40700000000"
+              href="tel:+40737701211"
               className="text-sm text-gray-400 hover:text-[#1a9410] transition-colors"
             >
-              +40 700 000 000
+              +40 737 701 211
             </a>
             <a
-              href="mailto:contact@excedo.ro"
+              href="mailto:excedo2022@gmail.com"
               className="text-sm text-gray-400 hover:text-[#1a9410] transition-colors"
             >
-              contact@excedo.ro
+              excedo2022@gmail.com
             </a>
             {/* Social */}
             <div className="flex gap-3 mt-2">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/AsociatiaExcedo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#1a9410] transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/asociatiaexcedo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#1a9410] transition-colors"
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
-          © 2025 Asociația EXCEDO. {tr(t.footer.rights, lang)}.
+          © 2026 Asociația EXCEDO. {tr(t.footer.rights, lang)}.
         </div>
       </div>
     </footer>

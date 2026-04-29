@@ -25,8 +25,8 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-sm text-gray-500">{lang === "ro" ? "Email" : "Email"}</p>
-              <a href="mailto:contact@excedo.ro" className="font-semibold text-[#1a9410] hover:underline">
-                contact@excedo.ro
+              <a href="mailto:excedo2022@gmail.com" className="font-semibold text-[#1a9410] hover:underline">
+                excedo2022@gmail.com
               </a>
             </div>
           </div>
@@ -39,8 +39,8 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-sm text-gray-500">{lang === "ro" ? "Telefon" : "Phone"}</p>
-              <a href="tel:+40700000000" className="font-semibold text-gray-900 hover:text-[#1a9410]">
-                +40 700 000 000
+              <a href="tel:+40737701211" className="font-semibold text-gray-900 hover:text-[#1a9410]">
+                +40 737 701 211
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-sm text-gray-500">Facebook</p>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-[#1a9410]">
+              <a href="https://www.facebook.com/AsociatiaExcedo" target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-[#1a9410]">
                 Asociația EXCEDO
               </a>
             </div>
@@ -67,8 +67,8 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-sm text-gray-500">Instagram</p>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-[#1a9410]">
-                @excedo.ro
+              <a href="https://www.instagram.com/asociatiaexcedo/" target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-[#1a9410]">
+                @asociatiaexcedo
               </a>
             </div>
           </div>

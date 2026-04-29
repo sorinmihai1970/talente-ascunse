@@ -98,10 +98,10 @@ export default function ArtworkPage() {
                 {tr(t.artwork.supportSuffix, lang)}
               </p>
               <a
-                href={`mailto:${artwork.contactEmail ?? "contact@excedo.ro"}`}
+                href={`mailto:${artwork.contactEmail ?? "excedo2022@gmail.com"}`}
                 className="mt-2 inline-block text-[#1a9410] font-semibold text-sm hover:underline"
               >
-                {artwork.contactEmail ?? "contact@excedo.ro"}
+                {artwork.contactEmail ?? "excedo2022@gmail.com"}
               </a>
             </div>
           </div>

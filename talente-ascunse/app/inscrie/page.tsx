@@ -75,10 +75,10 @@ export default function InscrierePage() {
             {tr(t.submit.sendTo, lang)}
           </h2>
           <a
-            href="mailto:contact@excedo.ro"
+            href="mailto:excedo2022@gmail.com"
             className="text-[#1a9410] font-bold text-xl hover:underline"
           >
-            contact@excedo.ro
+            excedo2022@gmail.com
           </a>
           <p className="text-gray-600 text-sm mt-3 leading-relaxed">
             {tr(t.submit.note, lang)}
