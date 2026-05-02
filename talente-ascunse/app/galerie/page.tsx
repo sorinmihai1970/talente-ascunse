@@ -6,13 +6,11 @@ import { t, tr } from "@/lib/translations";
 import { artworks, type Technique } from "@/lib/artworks";
 import ArtworkCard from "@/components/ArtworkCard";
 
-type TechFilter = "toate" | Technique;
+type TechFilter = "toate" | "pictura-desen" | Technique;
 
 const techFilters: { key: TechFilter; label: { ro: string; en: string } }[] = [
   { key: "toate", label: t.gallery.filters.all },
-  { key: "pictura", label: t.gallery.filters.painting },
-  { key: "acuarela", label: t.gallery.filters.watercolor },
-  { key: "desen", label: t.gallery.filters.drawing },
+  { key: "pictura-desen", label: t.gallery.filters.paintingDrawing },
   { key: "sculptura", label: t.gallery.filters.sculpture },
 ];
 
@@ -24,7 +22,10 @@ export default function GalleryPage() {
   const [activeArtist, setActiveArtist] = useState<string>("toti");
 
   const filtered = artworks.filter((a) => {
-    const matchTech = activeTech === "toate" || a.technique === activeTech;
+    const matchTech =
+      activeTech === "toate" ||
+      (activeTech === "pictura-desen" && ["pictura", "acuarela", "desen"].includes(a.technique)) ||
+      a.technique === activeTech;
     const matchArtist = activeArtist === "toti" || a.artistFirstName === activeArtist;
     return matchTech && matchArtist;
   });

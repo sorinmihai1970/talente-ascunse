@@ -37,6 +37,7 @@ export const t = {
     },
     filters: {
       all: { ro: "Toate", en: "All" },
+      paintingDrawing: { ro: "Pictură & Desen", en: "Painting & Drawing" },
       painting: { ro: "Pictură", en: "Painting" },
       watercolor: { ro: "Acuarelă", en: "Watercolor" },
       drawing: { ro: "Desen", en: "Drawing" },
