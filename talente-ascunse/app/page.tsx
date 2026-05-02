@@ -66,10 +66,10 @@ function HeroSection() {
           </div>
 
           <p className="text-sm text-gray-400 mt-2">
-            {tr(t.hero.contact, lang)}{" "}
-            <a href="mailto:excedo2022@gmail.com" className="text-[#4ade80] hover:underline">
-              excedo2022@gmail.com
-            </a>
+            {tr(t.hero.nudge, lang)}{" "}
+            <Link href="/inscrie" className="text-[#4ade80] hover:underline font-medium">
+              {tr(t.hero.nudgeCta, lang)}
+            </Link>
           </p>
         </div>
 

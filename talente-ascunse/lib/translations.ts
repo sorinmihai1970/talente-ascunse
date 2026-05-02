@@ -10,18 +10,19 @@ export const t = {
   },
   hero: {
     title: {
-      ro: "Arta vine din locuri neașteptate",
-      en: "Art comes from unexpected places",
+      ro: "Arta nu are adresă",
+      en: "Art has no address",
     },
     subtitle: {
-      ro: "Descoperă lucrările originale ale tinerilor artiști din medii rurale din România, promovate de Asociația EXCEDO.",
-      en: "Discover original artworks by young artists from rural Romania, promoted by EXCEDO Association.",
+      ro: "Talentul se naște într-un suflet curajos, care merită să fie descoperit și să aducă bucurie în viețile celorlalți.",
+      en: "Talent is born in a courageous soul, worthy of being discovered and bringing joy to the lives of others.",
     },
-    cta: { ro: "Vezi galeria", en: "View gallery" },
-    contact: {
-      ro: "Vrei să promovezi un tânăr artist? Scrie la",
-      en: "Want to promote a young artist? Write to",
+    cta: { ro: "Descoperă galeria", en: "Discover the gallery" },
+    nudge: {
+      ro: "Cunoști un tânăr cu talent artistic? Ajută-ne să îl aducem în lumină.",
+      en: "Do you know a young artistic talent? Help us bring them to light.",
     },
+    nudgeCta: { ro: "Înscrie o lucrare →", en: "Submit an artwork →" },
   },
   stats: {
     artworks: { ro: "lucrări expuse", en: "artworks displayed" },
