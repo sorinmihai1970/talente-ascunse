@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #2D1B69;
+  --bg-cream: #FAF7F2;
+  --text-dark: #1A1A2E;
+  --primary: #7C3AED;
+  --primary-dark: #5b21b6;
+  --text-white: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--bg-cream);
+  --color-foreground: var(--text-dark);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Georgia', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
