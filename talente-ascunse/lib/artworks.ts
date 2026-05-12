@@ -38,20 +38,6 @@ const img = (name: string) =>
 
 export const artworks: Artwork[] = [
   {
-    slug: "mere-si-gri",
-    title: "Mere si Gri",
-    titleEn: "Apples and Grey",
-    technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
-    artistFirstName: "Daria",
-    locality: "Rau Alb",
-    county: "Dambovita",
-    contactEmail: "dumitru.daria2004@gmail.com",
-    description: { ro: "", en: "" },
-    story: { ro: "Daria a inceput sa picteze pe caiet", en: "Daria began painting in her notebook" },
-    image: "/Lucrari/Daria_Rau%20Alb/mere-si-gri.jpeg",
-  },
-  {
     ...base,
     slug: "leopard",
     title: "Leopard",
