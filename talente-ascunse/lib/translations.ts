@@ -50,7 +50,7 @@ export const t = {
     artist: { ro: "Artist", en: "Artist" },
     story: { ro: "Povestea artistului", en: "The artist's story" },
     support: {
-      ro: "Vrei să îl/o susții pe",
+      ro: "Vrei să susții pe",
       en: "Want to support",
     },
     supportSuffix: {
