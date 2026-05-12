@@ -13,6 +13,10 @@ const teamMembers = [
     name: "Simona",
     role: { ro: "Co-fondatoare, Asociația EXCEDO", en: "Co-founder, EXCEDO Association" },
   },
+  {
+    name: "Veronica",
+    role: { ro: "EXCEDO", en: "EXCEDO" },
+  },
 ];
 
 export default function DesprePage() {
@@ -26,8 +30,8 @@ export default function DesprePage() {
           <h1 className="text-4xl font-bold mb-3">{tr(t.about.title, lang)}</h1>
           <p className="text-green-100 text-lg">
             {lang === "ro"
-              ? "O inițiativă a Asociației EXCEDO pentru arta românească rurală"
-              : "An initiative by EXCEDO Association for rural Romanian art"}
+              ? "O inițiativă a Asociației EXCEDO pentru tinerii artiști care merită să fie descoperiți"
+              : "An initiative by EXCEDO Association for young artists who deserve to be discovered"}
           </p>
         </div>
       </div>
@@ -64,8 +68,8 @@ export default function DesprePage() {
                 icon: "🌍",
                 title: { ro: "Accesibilitate", en: "Accessibility" },
                 text: {
-                  ro: "Dăm voce artiștilor din zone fără acces la platforme culturale.",
-                  en: "We give voice to artists from areas without access to cultural platforms.",
+                  ro: "Dăm voce tinerilor artiști care așteaptă să fie descoperiți.",
+                  en: "We give voice to young artists waiting to be discovered.",
                 },
               },
               {
@@ -91,7 +95,7 @@ export default function DesprePage() {
         {/* Echipa */}
         <section className="text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{tr(t.about.teamTitle, lang)}</h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-3 gap-6">
             {teamMembers.map((member) => (
               <div
                 key={member.name}

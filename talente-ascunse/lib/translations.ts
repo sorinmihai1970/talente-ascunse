@@ -32,8 +32,8 @@ export const t = {
   gallery: {
     title: { ro: "Galerie", en: "Gallery" },
     subtitle: {
-      ro: "Lucrări originale ale tinerilor artiști care merită să fie văzuți",
-      en: "Original artworks by young artists who deserve to be seen",
+      ro: "Lucrări originale ale tinerilor artiști",
+      en: "Original artworks by young artists",
     },
     filters: {
       all: { ro: "Toate", en: "All" },
@@ -48,7 +48,7 @@ export const t = {
     technique: { ro: "Tehnică", en: "Technique" },
     locality: { ro: "Localitate", en: "Locality" },
     artist: { ro: "Artist", en: "Artist" },
-    story: { ro: "Povestea din spate", en: "The story behind" },
+    story: { ro: "Povestea artistului", en: "The artist's story" },
     support: {
       ro: "Vrei să îl/o susții pe",
       en: "Want to support",
@@ -63,13 +63,13 @@ export const t = {
     title: { ro: "Despre proiect", en: "About the project" },
     missionTitle: { ro: "Misiunea noastră", en: "Our mission" },
     mission: {
-      ro: "Platforma Talente Ascunse promovează lucrările originale ale tinerilor artiști din medii rurale din România, oferindu-le vizibilitate și recunoaștere meritate.",
-      en: "The Hidden Talents platform promotes original artworks by young artists from rural Romania, giving them the visibility and recognition they deserve.",
+      ro: "Platforma Talente Ascunse aduce în lumină lucrările originale ale tinerilor artiști, oferindu-le vizibilitatea și recunoașterea pe care le merită.",
+      en: "The Hidden Talents platform brings to light original artworks by young artists, giving them the visibility and recognition they deserve.",
     },
     contextTitle: { ro: "Context", en: "Context" },
     context: {
-      ro: "Mulți tineri cu talent artistic real nu au acces la resurse, profesori sau platforme care să le pună în valoare munca. Asociația EXCEDO a inițiat acest proiect pentru a schimba această realitate.",
-      en: "Many young people with real artistic talent lack access to resources, teachers, or platforms to showcase their work. EXCEDO Association launched this project to change that reality.",
+      ro: "Mulți tineri cu talent artistic real nu au acces la resurse sau platforme care să le recunoască valoarea. Am inițiat acest proiect pentru a schimba această realitate.",
+      en: "Many young people with real artistic talent lack access to resources or platforms that recognize their value. We launched this project to change that reality.",
     },
     teamTitle: { ro: "Echipa", en: "Team" },
   },
@@ -85,62 +85,34 @@ export const t = {
         "Lucrarea trebuie să fie 100% originală, creată de un tânăr artist",
         "Fără personaje protejate de copyright",
         "Fără reproduceri după alte opere de artă",
-        "Artistul trebuie să provină dintr-un mediu rural",
         "Acordul GDPR al părintelui/tutorelui (dacă artistul este minor)",
       ],
       en: [
         "The artwork must be 100% original, created by a young artist",
         "No copyrighted characters",
         "No reproductions of other artworks",
-        "The artist must come from a rural area",
         "GDPR consent from parent/guardian (if the artist is a minor)",
       ],
     },
-    templateTitle: { ro: "Șablon email", en: "Email template" },
-    templateSubtitle: {
-      ro: "Completează și trimite emailul următor la adresa de contact:",
-      en: "Fill in and send the following email to the contact address:",
+    howToTitle: { ro: "Cum înscrii lucrările", en: "How to submit artworks" },
+    howToSteps: {
+      ro: [
+        "Descarcă și completează Formularul de înscriere",
+        "Descarcă, completează și semnează Acordul GDPR",
+        "Atașează formularul, acordul GDPR semnat și fotografiile lucrărilor (JPG sau PNG) și trimite prin email la: excedo2022@gmail.com",
+        "Veți primi un mesaj prin email cu lucrările care vor fi postate și cu textul pentru Povestea artistului, pentru confirmare.",
+        "Pentru orice nelămuriri și informații suplimentare ne puteți contacta prin email sau telefon.",
+      ],
+      en: [
+        "Download and fill in the Submission Form",
+        "Download, fill in and sign the GDPR Agreement",
+        "Attach the form, signed GDPR agreement and artwork photos (JPG or PNG) and send by email to: excedo2022@gmail.com",
+        "You will receive an email with the artworks to be posted and the text for The Artist's Story, for confirmation.",
+        "For any questions and additional information, you can contact us by email or phone.",
+      ],
     },
-    template: {
-      ro: `Subiect: Înscriere lucrare – [Prenume Artist]
-
-Bună ziua,
-
-Doresc să înscriu următoarea lucrare în cadrul platformei Talente Ascunse:
-
-Prenume artist:
-Localitate:
-Județ:
-Tehnică (pictură / acuarelă / desen / sculptură):
-Descriere lucrare:
-Povestea din spate (opțional):
-
-Atașez fotografia lucrării în format JPG sau PNG.
-
-Confirm că lucrarea este 100% originală și că sunt de acord cu publicarea pe platforma Talente Ascunse.
-Acord GDPR: Da / Nu (dacă artistul este minor, semnătura părintelui/tutorelui)
-
-Mulțumesc!`,
-      en: `Subject: Artwork submission – [Artist First Name]
-
-Hello,
-
-I would like to submit the following artwork to the Hidden Talents platform:
-
-Artist's first name:
-Locality:
-County:
-Technique (painting / watercolor / drawing / sculpture):
-Artwork description:
-The story behind (optional):
-
-I'm attaching the artwork photo in JPG or PNG format.
-
-I confirm that the artwork is 100% original and I agree to its publication on the Hidden Talents platform.
-GDPR consent: Yes / No (if the artist is a minor, parent/guardian signature required)
-
-Thank you!`,
-    },
+    formLabel: { ro: "Formular de înscriere", en: "Submission Form" },
+    gdprLabel: { ro: "Acord GDPR", en: "GDPR Agreement" },
     sendTo: { ro: "Trimite emailul la:", en: "Send your email to:" },
     note: {
       ro: "Lucrarea va fi publicată doar după aprobarea manuală de către echipa EXCEDO.",

@@ -1,20 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { useLang } from "@/lib/LanguageContext";
 import { t, tr, trArr } from "@/lib/translations";
 
 export default function InscrierePage() {
   const { lang } = useLang();
-  const [copied, setCopied] = useState(false);
 
-  const template = lang === "ro" ? t.submit.template.ro : t.submit.template.en;
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(template);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  const steps = trArr(t.submit.howToSteps, lang);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -45,42 +37,54 @@ export default function InscrierePage() {
           </ul>
         </section>
 
-        {/* Sablon email */}
+        {/* Cum înscrii lucrările */}
         <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <h2 className="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
+          <h2 className="text-lg font-bold text-gray-900 mb-5 flex items-center gap-2">
             <span className="w-7 h-7 rounded-full bg-[#e0f5e0] text-[#1a9410] flex items-center justify-center text-sm font-bold">2</span>
-            {tr(t.submit.templateTitle, lang)}
+            {tr(t.submit.howToTitle, lang)}
           </h2>
-          <p className="text-gray-500 text-sm mb-4 ml-10">{tr(t.submit.templateSubtitle, lang)}</p>
-
-          <div className="relative">
-            <pre className="bg-gray-50 rounded-xl p-5 text-sm text-gray-700 whitespace-pre-wrap font-mono border border-gray-200 leading-relaxed">
-              {template}
-            </pre>
-            <button
-              onClick={handleCopy}
-              className="absolute top-3 right-3 px-3 py-1.5 text-xs font-medium rounded-lg bg-white border border-gray-200 hover:border-[#1a9410] hover:text-[#1a9410] transition-colors shadow-sm"
-            >
-              {copied
-                ? lang === "ro" ? "✓ Copiat!" : "✓ Copied!"
-                : lang === "ro" ? "Copiază" : "Copy"}
-            </button>
-          </div>
+          <ol className="flex flex-col gap-4">
+            {/* Pasul 1: Formular */}
+            <li className="flex items-start gap-3">
+              <span className="w-5 h-5 rounded-full bg-[#1a9410] text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
+              <span className="text-gray-700 text-sm">
+                {lang === "ro" ? "Descarcă și completează " : "Download and fill in the "}
+                <a
+                  href="/documente/Formular_Inscriere_Lucrari.docx"
+                  download
+                  className="text-[#1a9410] font-semibold hover:underline"
+                >
+                  {tr(t.submit.formLabel, lang)}
+                </a>
+              </span>
+            </li>
+            {/* Pasul 2: GDPR */}
+            <li className="flex items-start gap-3">
+              <span className="w-5 h-5 rounded-full bg-[#1a9410] text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
+              <span className="text-gray-700 text-sm">
+                {lang === "ro" ? "Descarcă, completează și semnează " : "Download, fill in and sign the "}
+                <a
+                  href="/documente/Acord_GDPR_TalenteAscunse.docx"
+                  download
+                  className="text-[#1a9410] font-semibold hover:underline"
+                >
+                  {tr(t.submit.gdprLabel, lang)}
+                </a>
+              </span>
+            </li>
+            {/* Pasii 3-5 */}
+            {steps.slice(2).map((step, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="w-5 h-5 rounded-full bg-[#1a9410] text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">{i + 3}</span>
+                <span className="text-gray-700 text-sm">{step}</span>
+              </li>
+            ))}
+          </ol>
         </section>
 
-        {/* Trimite la */}
+        {/* Contact */}
         <section className="bg-[#e0f5e0] rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-            <span className="w-7 h-7 rounded-full bg-[#1a9410] text-white flex items-center justify-center text-sm font-bold">3</span>
-            {tr(t.submit.sendTo, lang)}
-          </h2>
-          <a
-            href="mailto:excedo2022@gmail.com"
-            className="text-[#1a9410] font-bold text-xl hover:underline"
-          >
-            excedo2022@gmail.com
-          </a>
-          <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed">
             {tr(t.submit.note, lang)}
           </p>
         </section>
