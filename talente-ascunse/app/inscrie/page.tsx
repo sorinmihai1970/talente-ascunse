@@ -82,12 +82,6 @@ export default function InscrierePage() {
           </ol>
         </section>
 
-        {/* Contact */}
-        <section className="bg-[#e0f5e0] rounded-2xl p-6">
-          <p className="text-gray-600 text-sm leading-relaxed">
-            {tr(t.submit.note, lang)}
-          </p>
-        </section>
       </div>
     </div>
   );
