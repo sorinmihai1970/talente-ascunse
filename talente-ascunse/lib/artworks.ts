@@ -38,6 +38,24 @@ const img = (name: string) =>
 
 export const artworks: Artwork[] = [
   {
+    slug: "muzica-si-blana",
+    title: "Muzică și blană",
+    titleEn: "Music and Fur",
+    technique: "pictura",
+    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    artistFirstName: "Daria Teodora",
+    locality: "Râu Alb",
+    county: "Dambovita",
+    contactEmail: "dumitru.daria2004@gmail.com",
+    description: {
+      ro: "O compoziție sensibilă care unește două lumi — muzica și blana moale a unui animal. Culorile calde și textura pensulei creează o atmosferă de căldură și intimitate.",
+      en: "A sensitive composition uniting two worlds — music and the soft fur of an animal. Warm colors and brushwork texture create an atmosphere of warmth and intimacy.",
+    },
+    story: { ro: "Daria Teodora din Râu Alb a început să picteze din joacă și a ajuns să creeze lumi întregi pe pânză și hârtie.\nDe doi ani, pensula nu mai e singurul ei instrument. Aceleași mâini care au pictat lumi întregi modelează acum ceara albinelor — lumânări, figurine, aranjamente care îți opresc privirea. Aceeași bucurie de a crea, aceeași răbdare, alte forme, alte texturi.", en: "Daria Teodora from Râu Alb started painting for fun and ended up creating entire worlds on canvas and paper.\nFor two years, the brush has no longer been her only instrument. The same hands that painted entire worlds now shape beeswax — candles, figurines, arrangements that stop you in your tracks. The same joy of creating, the same patience, different forms, different textures." },
+    image: "/Lucrari/Daria_Rau%20Alb/muzica-si-blana.jpeg",
+    featured: false,
+  },
+  {
     slug: "mere-si-gri",
     title: "Mere și gri",
     titleEn: "Apples and Gray",
