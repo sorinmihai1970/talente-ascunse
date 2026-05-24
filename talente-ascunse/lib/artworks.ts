@@ -17,8 +17,8 @@ export interface Artwork {
 }
 
 const story = {
-  ro: "Maria Valentina este elevă a Școlii Gimnaziale Râu Alb de Jos, care nu a urmat nicio școală de artă și pictează singură, cu ce are la îndemână, de la 7 ani. Există locuri în care talentul crește în tăcere, fără aplauze, fără cursuri speciale — și uneori, cele mai valoroase talente sunt tocmai cele care au avut cel mai puțin șansa să fie văzute.",
-  en: "Maria Valentina is a student at Râu Alb de Jos School who has never attended art school and has been painting on her own, with whatever she has at hand, since age 7. There are places where talent grows in silence, without applause, without special courses — and sometimes, the most valuable talents are precisely those that have had the least chance to be seen.",
+  ro: "Maria Valentina din Râu Alb, Dâmbovița, nu a urmat cursuri la o școală de artă. Nu a avut un mentor. A avut doar o foaie albă, o pensulă și ceva ce nu se poate învăța — har.\nDe la 7 ani desenează și pictează. Azi, lucrările ei opresc privirea.",
+  en: "Maria Valentina from Râu Alb, Dâmbovița, never attended art school. She had no mentor. She had only a blank sheet, a brush, and something that cannot be taught — gift.\nSince age 7, she has been drawing and painting. Today, her works stop you in your tracks.",
 };
 
 const techniqueLabel = { ro: "Pictură în acrilic", en: "Acrylic painting" };
@@ -37,6 +37,39 @@ const img = (name: string) =>
   `/Lucrari/Maria%20_%20Rau%20Alb/${name}`;
 
 export const artworks: Artwork[] = [
+  {
+    slug: "muzica-si-blana",
+    title: "Muzică și blană",
+    titleEn: "Music and Fur",
+    technique: "pictura",
+    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    artistFirstName: "Daria Teodora",
+    locality: "Râu Alb",
+    county: "Dambovita",
+    contactEmail: "dumitru.daria2004@gmail.com",
+    description: {
+      ro: "O compoziție sensibilă care unește două lumi — muzica și blana moale a unui animal. Culorile calde și textura pensulei creează o atmosferă de căldură și intimitate.",
+      en: "A sensitive composition uniting two worlds — music and the soft fur of an animal. Warm colors and brushwork texture create an atmosphere of warmth and intimacy.",
+    },
+    story: { ro: "Daria Teodora din Râu Alb a început să picteze din joacă și a ajuns să creeze lumi întregi pe pânză și hârtie.\nDe doi ani, pensula nu mai e singurul ei instrument. Aceleași mâini care au pictat lumi întregi modelează acum ceara albinelor — lumânări, figurine, aranjamente care îți opresc privirea. Aceeași bucurie de a crea, aceeași răbdare, alte forme, alte texturi.", en: "Daria Teodora from Râu Alb started painting for fun and ended up creating entire worlds on canvas and paper.\nFor two years, the brush has no longer been her only instrument. The same hands that painted entire worlds now shape beeswax — candles, figurines, arrangements that stop you in your tracks. The same joy of creating, the same patience, different forms, different textures." },
+    image: "/Lucrari/Daria_Rau%20Alb/muzica-si-blana.jpeg",
+    featured: false,
+  },
+  {
+    slug: "mere-si-gri",
+    title: "Mere și gri",
+    titleEn: "Apples and Gray",
+    technique: "pictura",
+    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    artistFirstName: "Daria Teodora",
+    locality: "Râu Alb",
+    county: "Dambovita",
+    contactEmail: "dumitru.daria2004@gmail.com",
+    description: { ro: "O explorare subtilă a tensiunii dintre căldura fructelor și frigiditatea nuanțelor gri, această lucrare în acrilic captează esența contemplativă a naturii moarte moderne. Merele, cu prezența lor vibrantă, dansează ușor pe un fundal neutru, creând un dialog pictorescesc între culoare și abstracțiune. Tehnica acrilicului amplifică intensitatea tonurilor, transformând o scenă simplă într-o meditație asupra contrastelor și armoniei.", en: "A subtle exploration of the tension between the warmth of fruits and the coldness of gray nuances, this acrylic work captures the contemplative essence of modern still life. Apples, with their vibrant presence, dance gently on a neutral background, creating a picturesque dialogue between color and abstraction. The acrylic technique amplifies the intensity of tones, transforming a simple scene into a meditation on contrasts and harmony." },
+    story: { ro: "Daria Teodora din Râu Alb a început să picteze din joacă și a ajuns să creeze lumi întregi pe pânză și hârtie.\nDe doi ani, pensula nu mai e singurul ei instrument. Aceleași mâini care au pictat lumi întregi modelează acum ceara albinelor — lumânări, figurine, aranjamente care îți opresc privirea. Aceeași bucurie de a crea, aceeași răbdare, alte forme, alte texturi.", en: "Daria Teodora from Râu Alb started painting for fun and ended up creating entire worlds on canvas and paper.\nFor two years, the brush has no longer been her only instrument. The same hands that painted entire worlds now shape beeswax — candles, figurines, arrangements that stop you in your tracks. The same joy of creating, the same patience, different forms, different textures." },
+    image: "/Lucrari/Daria_Rau%20Alb/mere-si-gri.jpeg",
+    featured: true,
+  },
   {
     ...base,
     slug: "leopard",

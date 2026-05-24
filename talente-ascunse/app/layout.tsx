@@ -10,7 +10,7 @@ const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Talente Ascunse | Hidden Talents – EXCEDO",
   description:
-    "Platforma pentru promovarea lucrărilor originale ale tinerilor artiști din medii rurale, inițiativă a Asociației EXCEDO.",
+    "Platforma care aduce în lumină talentele tinere care merită să fie descoperite, inițiativă a Asociației EXCEDO.",
   keywords: ["talente ascunse", "arta", "tineri artisti", "medii rurale", "EXCEDO", "Romania"],
 };
 
