@@ -9,12 +9,20 @@ export interface Artist {
 
 export const artists: Artist[] = [
   {
+    contactEmail: "dumitru.daria2004@gmail.com",
+    firstName: "Daria Teodora",
+    locality: "Râu Alb",
+    county: "Dambovita",
+    storyRo: "Daria Teodora din Râu Alb a început să picteze din joacă și a ajuns să creeze lumi întregi pe pânză și hârtie.\nDe doi ani, pensula nu mai e singurul ei instrument. Aceleași mâini care au pictat lumi întregi modelează acum ceara albinelor — lumânări, figurine, aranjamente care îți opresc privirea. Aceeași bucurie de a crea, aceeași răbdare, alte forme, alte texturi.",
+    storyEn: "Daria Teodora from Râu Alb started painting for fun and ended up creating entire worlds on canvas and paper.\nFor two years, the brush has no longer been her only instrument. The same hands that painted entire worlds now shape beeswax — candles, figurines, arrangements that stop you in your tracks. The same joy of creating, the same patience, different forms, different textures.",
+  },
+  {
     contactEmail: "naievalentin13@yahoo.com",
     firstName: "Maria Valentina",
     locality: "Râu Alb",
     county: "Dâmbovița",
-    storyRo: "Maria Valentina este elevă a Școlii Gimnaziale Râu Alb de Jos, care nu a urmat nicio școală de artă și pictează singură, cu ce are la îndemână, de la 7 ani. Există locuri în care talentul crește în tăcere, fără aplauze, fără cursuri speciale — și uneori, cele mai valoroase talente sunt tocmai cele care au avut cel mai puțin șansa să fie văzute.",
-    storyEn: "Maria Valentina is a student at Râu Alb de Jos School who has never attended art school and has been painting on her own, with whatever she has at hand, since age 7. There are places where talent grows in silence, without applause, without special courses — and sometimes, the most valuable talents are precisely those that have had the least chance to be seen.",
+    storyRo: "Maria Valentina din Râu Alb, Dâmbovița, nu a urmat cursuri la o școală de artă. Nu a avut un mentor. A avut doar o foaie albă, o pensulă și ceva ce nu se poate învăța — har.\nDe la 7 ani desenează și pictează. Azi, lucrările ei opresc privirea.",
+    storyEn: "Maria Valentina from Râu Alb, Dâmbovița, never attended art school. She had no mentor. She had only a blank sheet, a brush, and something that cannot be taught — gift.\nSince age 7, she has been drawing and painting. Today, her works stop you in your tracks.",
   },
 ];
 

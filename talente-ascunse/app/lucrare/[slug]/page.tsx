@@ -70,11 +70,6 @@ export default function ArtworkPage() {
               </span>
             </div>
 
-            {/* Descriere */}
-            <p className="text-gray-600 leading-relaxed">
-              {lang === "ro" ? artwork.description.ro : artwork.description.en}
-            </p>
-
             {/* Poveste */}
             {artwork.story && (
               <div className="bg-[#e0f5e0] rounded-2xl p-5">
@@ -84,9 +79,15 @@ export default function ArtworkPage() {
                   </svg>
                   {tr(t.artwork.story, lang)}
                 </h2>
-                <p className="text-gray-700 text-sm leading-relaxed italic">
-                  {lang === "ro" ? artwork.story.ro : artwork.story.en}
-                </p>
+                <div className="flex flex-col gap-3">
+                  {(lang === "ro" ? artwork.story.ro : artwork.story.en)
+                    .split("\n")
+                    .map((para, i) => (
+                      <p key={i} className="text-gray-700 text-sm leading-relaxed italic text-justify">
+                        {para}
+                      </p>
+                    ))}
+                </div>
               </div>
             )}
 
