@@ -31,8 +31,8 @@ export default function Footer() {
             </div>
             <p className="text-xs text-gray-500 leading-relaxed">
               {lang === "ro"
-                ? "Asociația EXCEDO promovează talentele tinere din mediile rurale ale României."
-                : "EXCEDO Association promotes young talents from rural areas of Romania."}
+                ? "Asociația EXCEDO aduce în lumină talentele tinere care merită să fie descoperite."
+                : "EXCEDO Association brings to light young talents that deserve to be discovered."}
             </p>
           </div>
 
