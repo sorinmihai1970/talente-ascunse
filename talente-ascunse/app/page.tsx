@@ -190,8 +190,8 @@ function CallToAction() {
           </h2>
           <p className="text-gray-600 mb-6">
             {lang === "ro"
-              ? "Ajută-ne să descoperim talentele ascunse din România rurală. Înscrie o lucrare și facem noi restul."
-              : "Help us discover hidden talents from rural Romania. Submit an artwork and we'll do the rest."}
+              ? "Ajută-ne să aducem în lumină talentele care merită să fie descoperite. Înscrie o lucrare și facem noi restul."
+              : "Help us bring to light the talents that deserve to be discovered. Submit an artwork and we'll do the rest."}
           </p>
           <Link
             href="/inscrie"
