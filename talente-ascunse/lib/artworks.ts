@@ -55,6 +55,7 @@ export const artworks: Artwork[] = [
     title: "Bust feminin",
     titleEn: "Female Bust",
     image: imgCeara("bust-feminin.jpeg"),
+    featured: true,
     description: {
       ro: "Un bust feminin modelat în ceară cu delicatețe și simț plastic — forme moi, expresie calmă. Lucrarea surprinde esența feminității prin simplitate și eleganță.",
       en: "A female bust modeled in wax with delicacy and plastic sense — soft forms, calm expression. The work captures the essence of femininity through simplicity and elegance.",
@@ -77,6 +78,7 @@ export const artworks: Artwork[] = [
     title: "Cuburi și lavandă",
     titleEn: "Cubes and Lavender",
     image: imgCeara("cuburi-si-lavanda.jpeg"),
+    featured: true,
     description: {
       ro: "Lumânări cubice din ceară naturală combinate cu lavandă uscată — geometrie pură întâlnind natura. Simplitatea formei amplifică parfumul și estetica întregului aranjament.",
       en: "Cubic candles made of natural wax combined with dried lavender — pure geometry meeting nature. The simplicity of the form amplifies the fragrance and aesthetics of the whole arrangement.",
@@ -114,7 +116,6 @@ export const artworks: Artwork[] = [
       ro: "Lumânărele minuscule turnate în coji de nucă — un concept delicat care transformă un material simplu din natură într-un obiect de artă funcțional și poetic.",
       en: "Tiny candles poured into walnut shells — a delicate concept that transforms a simple natural material into a functional and poetic art object.",
     },
-    featured: true,
   },
   {
     ...dariaCeara,
