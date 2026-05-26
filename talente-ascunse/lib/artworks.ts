@@ -21,7 +21,7 @@ const story = {
   en: "Maria Valentina from Râu Alb, Dâmbovița, never attended art school. She had no mentor. She had only a blank sheet, a brush, and something that cannot be taught — gift.\nSince age 7, she has been drawing and painting. Today, her works stop you in your tracks.",
 };
 
-const techniqueLabel = { ro: "Pictură în acrilic", en: "Acrylic painting" };
+const techniqueLabel = { ro: "Pictură", en: "Painting" };
 
 const base = {
   technique: "pictura" as Technique,
@@ -36,13 +36,125 @@ const base = {
 const img = (name: string) =>
   `/Lucrari/Maria%20_%20Rau%20Alb/${name}`;
 
+const dariaCeara = {
+  technique: "sculptura" as Technique,
+  techniqueLabel: { ro: "Figurine din ceară", en: "Wax figures" },
+  artistFirstName: "Daria Teodora",
+  locality: "Râu Alb",
+  county: "Dambovita",
+  contactEmail: "dumitru.daria2004@gmail.com",
+  story: { ro: "Daria Teodora din Râu Alb a început să picteze din joacă și a ajuns să creeze lumi întregi pe pânză și hârtie.\nDe doi ani, pensula nu mai e singurul ei instrument. Aceleași mâini care au pictat lumi întregi modelează acum ceara albinelor — lumânări, figurine, aranjamente care îți opresc privirea. Aceeași bucurie de a crea, aceeași răbdare, alte forme, alte texturi.", en: "Daria Teodora from Râu Alb started painting for fun and ended up creating entire worlds on canvas and paper.\nFor two years, the brush has no longer been her only instrument. The same hands that painted entire worlds now shape beeswax — candles, figurines, arrangements that stop you in your tracks. The same joy of creating, the same patience, different forms, different textures." },
+};
+
+const imgCeara = (name: string) => `/Lucrari/Daria_Rau%20Alb/Ceara/${name}`;
+
 export const artworks: Artwork[] = [
+  {
+    ...dariaCeara,
+    slug: "bust-feminin",
+    title: "Bust feminin",
+    titleEn: "Female Bust",
+    image: imgCeara("bust-feminin.jpeg"),
+    description: {
+      ro: "Un bust feminin modelat în ceară cu delicatețe și simț plastic — forme moi, expresie calmă. Lucrarea surprinde esența feminității prin simplitate și eleganță.",
+      en: "A female bust modeled in wax with delicacy and plastic sense — soft forms, calm expression. The work captures the essence of femininity through simplicity and elegance.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "cosulet-cu-bucurii",
+    title: "Coșuleț cu bucurii",
+    titleEn: "Little Basket of Joys",
+    image: imgCeara("cosulet-cu-bucurii.jpeg"),
+    description: {
+      ro: "Un coșuleț miniatural din ceară, plin de mici bucurii — aranjament delicat care îmbină texturi naturale și culori calde. Un cadou vizual despre lucrurile mici care contează.",
+      en: "A miniature wax basket, full of small joys — a delicate arrangement combining natural textures and warm colors. A visual gift about the small things that matter.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "cuburi-si-lavanda",
+    title: "Cuburi și lavandă",
+    titleEn: "Cubes and Lavender",
+    image: imgCeara("cuburi-si-lavanda.jpeg"),
+    description: {
+      ro: "Lumânări cubice din ceară naturală combinate cu lavandă uscată — geometrie pură întâlnind natura. Simplitatea formei amplifică parfumul și estetica întregului aranjament.",
+      en: "Cubic candles made of natural wax combined with dried lavender — pure geometry meeting nature. The simplicity of the form amplifies the fragrance and aesthetics of the whole arrangement.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "din-stup-cu-drag",
+    title: "Din stup, cu drag",
+    titleEn: "From the Hive, with Love",
+    image: imgCeara("din-stup-cu-drag.jpeg"),
+    description: {
+      ro: "Ceară de albine modelată cu drag — aranjament care aduce în casă căldura stupului și mirosul dulce al naturii. O lucrare despre originea materiei și grija cu care e transformată.",
+      en: "Beeswax shaped with love — an arrangement that brings into the home the warmth of the hive and the sweet smell of nature. A work about the origin of matter and the care with which it is transformed.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "ghinda-de-ceara",
+    title: "Ghindă de ceară",
+    titleEn: "Wax Acorn",
+    image: imgCeara("ghinda-de-ceara.jpeg"),
+    description: {
+      ro: "O ghindă recreată în ceară cu fidelitate și sensibilitate — natură captată în formă permanentă. Detaliile fine și textura suprafeței trădează răbdarea și precizia artistei.",
+      en: "An acorn recreated in wax with fidelity and sensitivity — nature captured in permanent form. The fine details and surface texture reveal the artist's patience and precision.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "lumanarele-in-coji-de-nuca",
+    title: "Lumânărele în coji de nucă",
+    titleEn: "Candles in Walnut Shells",
+    image: imgCeara("lumanarele-in-coji-de-nuca.jpeg"),
+    description: {
+      ro: "Lumânărele minuscule turnate în coji de nucă — un concept delicat care transformă un material simplu din natură într-un obiect de artă funcțional și poetic.",
+      en: "Tiny candles poured into walnut shells — a delicate concept that transforms a simple natural material into a functional and poetic art object.",
+    },
+    featured: true,
+  },
+  {
+    ...dariaCeara,
+    slug: "lumanari-stup",
+    title: "Lumânări stup",
+    titleEn: "Beehive Candles",
+    image: imgCeara("lumanari-stup.jpeg"),
+    description: {
+      ro: "Lumânări modelate în formă de stup — omagiu adus albinelor și cerii naturale. Textura fagureului redată în ceară creează un obiect cu identitate puternică și estetică naturală.",
+      en: "Candles modeled in the shape of a beehive — a tribute to bees and natural wax. The honeycomb texture rendered in wax creates an object with a strong identity and natural aesthetic.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "scortisoara-ceara-si-lavanda",
+    title: "Scorțișoară, ceară și lavandă",
+    titleEn: "Cinnamon, Wax and Lavender",
+    image: imgCeara("scortisoara-ceara-si-lavanda.jpeg"),
+    description: {
+      ro: "Un aranjament senzorial din ceară, scorțișoară și lavandă — trei arome care se împletesc în forme vizuale armonioase. O lucrare care vorbește despre simțuri și echilibru.",
+      en: "A sensory arrangement of wax, cinnamon and lavender — three aromas that intertwine in harmonious visual forms. A work that speaks about the senses and balance.",
+    },
+  },
+  {
+    ...dariaCeara,
+    slug: "scortisoara-fagure-lavanda",
+    title: "Scorțișoară, fagure și lavandă",
+    titleEn: "Cinnamon, Honeycomb and Lavender",
+    image: imgCeara("scortisoara-fagure-lavanda.jpeg"),
+    description: {
+      ro: "Fagure natural de ceară alături de scorțișoară și lavandă — natură în starea ei cea mai pură. Compoziția celebrează frumusețea materialelor simple și puterea lor estetică.",
+      en: "Natural beeswax honeycomb alongside cinnamon and lavender — nature in its purest state. The composition celebrates the beauty of simple materials and their aesthetic power.",
+    },
+  },
   {
     slug: "muzica-si-blana",
     title: "Muzică și blană",
     titleEn: "Music and Fur",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -60,7 +172,7 @@ export const artworks: Artwork[] = [
     title: "Chitară",
     titleEn: "Guitar",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -78,7 +190,7 @@ export const artworks: Artwork[] = [
     title: "Curgere",
     titleEn: "Flow",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -96,7 +208,7 @@ export const artworks: Artwork[] = [
     title: "Fecioara Maria",
     titleEn: "Virgin Mary",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -114,7 +226,7 @@ export const artworks: Artwork[] = [
     title: "Gemenii",
     titleEn: "The Twins",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -132,7 +244,7 @@ export const artworks: Artwork[] = [
     title: "Lumea meduzelor",
     titleEn: "The World of Jellyfish",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -150,7 +262,7 @@ export const artworks: Artwork[] = [
     title: "Pași spre nicăieri",
     titleEn: "Steps to Nowhere",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -168,7 +280,7 @@ export const artworks: Artwork[] = [
     title: "Prăbușirea",
     titleEn: "The Fall",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
@@ -186,7 +298,7 @@ export const artworks: Artwork[] = [
     title: "Mere și gri",
     titleEn: "Apples and Gray",
     technique: "pictura",
-    techniqueLabel: { ro: "Pictură în acrilic", en: "Acrylic painting" },
+    techniqueLabel: { ro: "Pictură", en: "Painting" },
     artistFirstName: "Daria Teodora",
     locality: "Râu Alb",
     county: "Dambovita",
