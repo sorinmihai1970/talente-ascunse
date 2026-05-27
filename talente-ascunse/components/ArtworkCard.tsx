@@ -13,13 +13,13 @@ interface Props {
 export default function ArtworkCard({ artwork, lang }: Props) {
   return (
     <Link href={`/lucrare/${artwork.slug}`} className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-      <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+      <div className="relative aspect-[4/5] overflow-hidden bg-gray-50">
         <Image
           src={artwork.image}
           alt={lang === "ro" ? artwork.title : artwork.titleEn}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          className="object-contain group-hover:scale-105 transition-transform duration-300"
         />
       </div>
       <div className="p-4">
